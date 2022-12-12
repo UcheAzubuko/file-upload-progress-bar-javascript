@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: #cb67e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+::selection {
+  color: white;
+  background: #cb67e9;
+}
+.file-upload__wrapper {
+  width: 640px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 35px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.05);
+}
+.file-upload__wrapper header {
+  color: #cb67e9;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-parent {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+}
+.file-upload__wrapper form.file-upload__form {
+  height: 150px;
+  border: 2px dashed #cb67e9;
+  cursor: pointer;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 10px;
+}
+form.file-upload__form :where(i, p) {
+  color: #cb67e9;
+}
+form.file-upload__form i {
+  font-size: 50px;
+}
+form.file-upload__form p {
+  font-size: 1rem;
+  margin-top: 15px;
+}
+section .row {
+  background: #e9f0ff;
+  margin-bottom: 10px;
+  list-style: none;
+  padding: 15px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+}
+section .row i {
+  font-size: 2rem;
+  color: #cb67e9;
+}
+section .details span {
+  font-size: 1rem;
+}
+.progress-container .row .content-wrapper {
+  margin-left: 15px;
+  width: 100%;
+}
+.progress-container .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7px;
+}
+.progress-container .content .progress-bar-wrapper {
+  height: 10px;
+  width: 100%;
+  margin-bottom: 5px;
+  background: #fff;
+  border-radius: 30px;
+}
+.content .progress-bar .progress-wrapper {
+  height: 100%;
+  background: #cb67e9;
+  width: 0%;
+  border-radius: 6px;
+}
+.uploaded-container {
+  overflow-y: scroll;
+  max-height: 230px;
+}
+.uploaded-container.onprogress {
+  max-height: 160px;
+}
+.uploaded-container .row .content-wrapper {
+  display: flex;
+  align-items: center;
+}
+.uploaded-container .row .details-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.uploaded-container .row .details-wrapper .name span {
+  color: green;
+  font-size: 10px;
+}
+.uploaded-container .row .details-wrapper .file-size {
+  color: #404040;
+  font-size: 11px;
+}

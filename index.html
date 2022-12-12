@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/355573397a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="main.css" />
+    <title>File Upload with Progress Bar using JavaScript</title>
+  </head>
+  <body>
+    <div class="file-upload__wrapper">
+      <header>File Uploader JavaScript with Progress</header>
+      <div class="form-parent">
+        <form action="#" class="file-upload__form">
+            <input class="file-input" type="file" name="file" hidden />
+            <i class="fas fa-cloud-upload-alt"></i>
+            <p>Browse File to Upload</p>
+          </form>
+          <div>
+            <section class="progress-container"></section>
+            <section class="uploaded-container"></section>
+          </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
